@@ -92,8 +92,8 @@ rules for jsx:
            1.returns only one parent element
            2.embedded js using {}
            3.inline styles -- {{}}
-           4. use "className" instead of  using "class"
-           5. Use camelCase for event handlers and attributes -(onClick)
+           4. using  "className" instead of  using "class"
+           5. Using camelCase for event handlers and attributes -(onClick)
            5.create a folder inside src as components (parsel casing )
 inside that file - Greetings. import it in app
            6. props - it is a property used to pass data from parent component to the child component
@@ -131,4 +131,7 @@ ternary operator login and && operator
 2.need input field  for entering temp
 3.temp enter (0-55)  limit
 4. temp below 30 one image should be there for cold : temp above 30 one image shoud  be there for hot using && 
+
+Day 7 : 4/11/2025
+nothing taken task checking done
 
