@@ -81,7 +81,7 @@ node installation
 create react app
 babel - compiler/ transpilar  converts jsx to pure js
 package.json - blueprint or metadata of a particular project
-src- source file that contains all the code files of your project
+src- source file that contains all the code files of your  particular project
 
 day 2: 28/10/2025:
 file structure
@@ -134,4 +134,13 @@ ternary operator login and && operator
 
 Day 7 : 4/11/2025
 nothing taken task checking done
+
+Day 8 : 5/11/2025
+event handler - it  is a function that handles the user interaction like clicking mouse 
+task:
+1.  list of vegetable and price object
+list vegetables =[{ name: "carrot", color:"orange", price: 30 }, { name: "potato", color: "brown", price: 20 }]
+2. for listing arrays in react "map" is the best option
+ vegetables 
+3. create a table with some list (3 rows) 
 

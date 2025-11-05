@@ -7,6 +7,10 @@ import ToggleContent from './components/ToggleContent';
 import LogIn from './components/LogIn';
 // import Attendance from './components/Attendance';
 import WeatherApp from './components/WeatherApp';
+import StudentList from './components/StudentList';
+import FruitList from './components/FruitList';
+import VegetableList from './components/VegetableList';
+
 function App() {
  const userName ="Manu"
 
@@ -27,6 +31,9 @@ function App() {
    <Attendance name="saranya"/>
      <Attendance name="hemnath"/> */}
      <WeatherApp/>
+     <StudentList/>
+     <FruitList/>
+     <VegetableList/>
     </div>
 
   );
