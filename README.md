@@ -1,74 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
 Day 1:27/10/2025 :
 BOM
 DOM
@@ -83,7 +12,7 @@ babel - compiler/ transpilar  converts jsx to pure js
 package.json - blueprint or metadata of a particular project
 src- source file that contains all the code files of your  particular project
 
-day 2: 28/10/2025:
+Day 2: 28/10/2025:
 file structure
 component- is a building block of react project it is a resuable piece of code
 function components - functional component is a js function which returns the jsx element.
@@ -91,9 +20,9 @@ jsx: javascript xml (not html it is html like syntax)
 rules for jsx:
            1.returns only one parent element
            2.embedded js using {}
-           3.inline styles -- {{}}
+           3.inline styles  are applied using {{}}
            4. using  "className" instead of  using "class"
-           5. Using camelCase for event handlers and attributes -(onClick)
+           5. Using camelCasing for event handlers and attributes -(onClick)
            5.create a folder inside src as components (parsel casing )
 inside that file - Greetings. import it in app
            6. props - it is a property used to pass data from parent component to the child component
@@ -101,7 +30,8 @@ inside that file - Greetings. import it in app
 Day 3:29/10/2025:
         state: state is special memory inside a component that can holds data which can change over time
         Hooks: hook is a special function used to  state management, lifecycle methods , side effects 
-        usestate: usestate is a hook used to manage state.
+        usestate: usestate is a hook used to manage state in the component 
+        use state is assigned to a array of values one is state variable and state function 
         const [state, setState]=usestate(initial value)
         events:action performed by user
         synthetic events: react wrap html events. like (onClick)
@@ -143,4 +73,48 @@ list vegetables =[{ name: "carrot", color:"orange", price: 30 }, { name: "potato
 2. for listing arrays in react "map" is the best option
  vegetables 
 3. create a table with some list (3 rows) 
+
+Day 9 : 6/11/2025
+
+1: Weather Info with Object Prop
+ Create a component that accepts a single object as a prop
+      (example: { city: "Chennai", temp: 30 }) and displays:
+ output:
+          Current temperature in Chennai is 30°C
+WeatherInfo -- parent comp
+weather = { city: "Chennai", temp: 30 } -- props
+WeatherDisplay - child comp
+display: use template literal eg :
+{nfjkghijsf ${userName}}
+weather.city weather.temp
+
+2: User Login Status with Conditional Prop
+
+    Pass a user object as a prop 
+     (example: { name: "Manu", isLoggedIn: true }).
+
+ output:
+"Welcome back!" if isLoggedIn is true, otherwise show "Please login".
+LoginParent - parent LoginStatus - child
+{ name: "Manu", isLoggedIn: true } -- props
+isLoggedIn ? "Welcome back!" : "Please login"
+
+3: Colors with Array Prop:
+Pass an array of colors as a prop (example: ["Red", "Blue", "Yellow"]). Display them in one line like: output: Primary colors are: Red, Blue, Yellow
+
+colorParent - PrimayColor -
+
+props - ["Red", "Blue", "Yellow"] colors.map((color,index)=>(
+
+))
+
+Day 10: 7/11/2025 
+
+task for monday:
+1. select tag learn (static drop down) create and come
+2. form (submit) learn and come  create and come
+3. js test 
+
+
+
 

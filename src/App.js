@@ -1,15 +1,23 @@
 import './App.css';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 // import Greetings from './components/Greetings';
 // import Message from './components/Message';
-import LoginButton from'./components/LoginButton';
-import ToggleContent from './components/ToggleContent';
-import LogIn from './components/LogIn';
+// import LoginButton from'./components/LoginButton';
+// import ToggleContent from './components/ToggleContent';
+// import LogIn from './components/LogIn';
 // import Attendance from './components/Attendance';
-import WeatherApp from './components/WeatherApp';
-import StudentList from './components/StudentList';
-import FruitList from './components/FruitList';
-import VegetableList from './components/VegetableList';
+// import WeatherApp from './components/WeatherApp';
+// import StudentList from './components/StudentList';
+// import FruitList from './components/FruitList';
+// import VegetableList from './components/VegetableList';
+// import StudentTable from './components/Table';
+// import WeatherInfo from './components/WeatherInfo';
+// import LoginParent from './components/LoginParent';
+// import ColorParent from './components/ColorParent';
+import Table from './components/Table';
+import ToggleButton from './components/ToggleButton';
+import MessageChanger from './components/MessageChanger';
+
 
 function App() {
  const userName ="Manu"
@@ -19,24 +27,30 @@ function App() {
   {/*  MAIN COMP */}
   {/* <p className='username' style={{color:"red"}}> {userName}</p> 
    <Greetings userName={userName}/> */}
-  <Counter/>
-  <LoginButton/>
+  {/* <Counter/>
+  <LoginButton/> */}
   <br></br>
-  <ToggleContent/>
-  <LogIn/>
+  {/* <ToggleContent/>
+  <LogIn/> */}
 
   {/* <Message/>
-
    <Attendance name="malai"/>
    <Attendance name="saranya"/>
      <Attendance name="hemnath"/> */}
-     <WeatherApp/>
+     {/* <WeatherApp/>
      <StudentList/>
      <FruitList/>
      <VegetableList/>
+     <StudentTable/> */}
+     {/* <WeatherInfo/>
+     <LoginParent/>
+     <ColorParent/> */}
+     <Table/>
+     <ToggleButton/>
+     <MessageChanger/>
+
     </div>
 
   );
 }
-
 export default App;
