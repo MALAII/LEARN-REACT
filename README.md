@@ -109,11 +109,64 @@ props - ["Red", "Blue", "Yellow"] colors.map((color,index)=>(
 ))
 
 Day 10: 7/11/2025 
+Table Task Create a JSX component that shows a student details table. Columns: Roll No, Name, Grade. Add at least 3 rows with sample data. Use className="student-table" for the table. Expected Output: Roll No Name Grade 1 Anitha A 2 Rahul B 3 Deepak A+
 
 task for monday:
 1. select tag learn (static drop down) create and come
 2. form (submit) learn and come  create and come
 3. js test 
+
+Day 11 : 10/11/2025
+
+form submit taken 
+controlled components : component controlled by react state
+uncontrolled components: component controlled by DOM itself.
+
+class task: email in form
+task:  Form Task
+Create a Student Registration Form with the following inputs:
+Name (text input)
+Age (number input)
+Email (email input)
+Password (password input)
+Date of Birth (date input)
+Use proper className for each input (e.g., "form-input", "form-label").
+Display below the form:
+Student Registered: [Name] - [Age] years old
+
+Day 12 : 11/11/2025
+
+useEffect= hook in react used for handling side effects
+login --> post API (posting something to backend)
+navigate to dashboard
+--> render --> side effect --> products api 
+
+useEffect format:
+useEffect (()=>{
+    <!-- side Effects code -->
+})
+
+case 1 --> 1. No dependency array → runs on every render
+useEffect (()=>{
+     <!-- side Effects code -->
+})
+
+case 2 --> 2. Empty dependency array [] → runs only once initially - (mounted)
+run after initial render - if the dependency array is empty it runs initially 
+useEffect (()=>{
+     <!-- side Effects code -->
+} ,[]) - dependancy array or second argument in useEffect
+
+case 3 --> with dependencies array - runs whenever the  state changes 
+const [name , setName]=useState("")
+useEffect (()=>{
+     <!-- side Effects code -->
+}, [name,age])
+
+
+
+
+
 
 
 

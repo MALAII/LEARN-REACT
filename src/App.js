@@ -17,6 +17,11 @@ import './App.css';
 import Table from './components/Table';
 import ToggleButton from './components/ToggleButton';
 import MessageChanger from './components/MessageChanger';
+import Form from './components/Form';
+import StudentRegistrationForm from './components/StudentRegistrationForm';
+import SelectStudent from './components/SelectStudent';
+import SideEffect from './components/SideEffect';
+import LoginEffect from './components/LoginEffect';
 
 
 function App() {
@@ -48,6 +53,11 @@ function App() {
      <Table/>
      <ToggleButton/>
      <MessageChanger/>
+     <Form/>
+     <StudentRegistrationForm/>
+     <SelectStudent/>
+     <SideEffect userName="malai"/>
+     <LoginEffect/>
 
     </div>
 
