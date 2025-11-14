@@ -136,7 +136,7 @@ Student Registered: [Name] - [Age] years old
 
 Day 12 : 11/11/2025
 
-useEffect= hook in react used for handling side effects
+useEffect= it is a  react hook  used for handling side effects in your component.
 login --> post API (posting something to backend)
 navigate to dashboard
 --> render --> side effect --> products api 
@@ -162,6 +162,26 @@ const [name , setName]=useState("")
 useEffect (()=>{
      <!-- side Effects code -->
 }, [name,age])
+
+Day 13:12/11/2025
+
+class task:
+Feedback Form – Username, Rating (1–5), Comment.
+Display submitted feedback below form.
+
+Day 14 : 13/11/2025
+Router dom --> used to route pages
+install library
+
+task:
+full name = state ==> (string)
+user 2 inputs ==> first name and last name input
+first name==> state
+last name==> state 
+combine these two name inputs and shwo in full name state
+useEffect(()={
+     setFullname(`${firstname} ${lastname}`)
+},[firstname, lastname])
 
 
 

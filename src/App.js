@@ -14,14 +14,21 @@ import './App.css';
 // import WeatherInfo from './components/WeatherInfo';
 // import LoginParent from './components/LoginParent';
 // import ColorParent from './components/ColorParent';
-import Table from './components/Table';
-import ToggleButton from './components/ToggleButton';
-import MessageChanger from './components/MessageChanger';
-import Form from './components/Form';
-import StudentRegistrationForm from './components/StudentRegistrationForm';
-import SelectStudent from './components/SelectStudent';
-import SideEffect from './components/SideEffect';
-import LoginEffect from './components/LoginEffect';
+// import Table from './components/Table';
+// import ToggleButton from './components/ToggleButton';
+// import MessageChanger from './components/MessageChanger';
+// import Form from './components/Form';
+// import StudentRegistrationForm from './components/StudentRegistrationForm';
+// import SelectStudent from './components/SelectStudent';
+// import SideEffect from './components/SideEffect';
+// import LoginEffect from './components/LoginEffect';
+import FeedbackForm from './components/FeedbackForm';
+import {BrowserRouter, Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import { Link } from 'react-router-dom';
+import FullNameExample from './components/FullNameExample';
+
 
 
 function App() {
@@ -50,14 +57,29 @@ function App() {
      {/* <WeatherInfo/>
      <LoginParent/>
      <ColorParent/> */}
-     <Table/>
+     {/* <Table/>
      <ToggleButton/>
      <MessageChanger/>
      <Form/>
-     <StudentRegistrationForm/>
-     <SelectStudent/>
+     <StudentRegistrationForm/> */}
+     {/* <SelectStudent/>
      <SideEffect userName="malai"/>
-     <LoginEffect/>
+     <LoginEffect/> */}
+     <FeedbackForm/>
+
+     <BrowserRouter>
+
+     <nav>
+      <Link to={'/home'}>Home</Link>
+      <Link to={'/about'}>About</Link>
+      </nav>
+
+     <Routes>
+     <Route path='/home' element ={<Home/>} />
+     <Route path='/About' element ={<About/>}/>
+     </Routes>
+     </BrowserRouter>
+     <FullNameExample/>
 
     </div>
 
