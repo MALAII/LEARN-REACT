@@ -157,7 +157,7 @@ useEffect (()=>{
      <!-- side Effects code -->
 } ,[]) - dependancy array or second argument in useEffect
 
-case 3 --> with dependencies array - runs whenever the  state changes 
+case 3 -->  dependency array with values - runs whenever the  state changes 
 const [name , setName]=useState("")
 useEffect (()=>{
      <!-- side Effects code -->
@@ -170,8 +170,25 @@ Feedback Form – Username, Rating (1–5), Comment.
 Display submitted feedback below form.
 
 Day 14 : 13/11/2025
-Router dom --> used to route pages
+Router dom  --> used to routes pages
 install library
+
+  <BrowserRouter>
+  <!-- main wraper of router dom -->
+
+<nav>
+  <Link to={"/home"}>Home</Link>
+  <Link to={"/about"}>About</Link>
+  <!-- link the path -->
+</nav>
+  <Routes>
+    <!--wrapper for collecting each routes router dom -->
+
+<Route path='/home' element ={<Home/>} />
+<Route path='/about' element ={<About/>} />
+<!-- defining the path for each page -->
+  </Routes>
+  </BrowserRouter>
 
 task:
 full name = state ==> (string)
@@ -182,6 +199,13 @@ combine these two name inputs and shwo in full name state
 useEffect(()={
      setFullname(`${firstname} ${lastname}`)
 },[firstname, lastname])
+
+Day 15 : 14/11/2025
+
+useNavigate() -->  navigate to next page
+useParams() -->useParams() is a React Router hook that helps you read the values from the URL.
+We need useParams() to read these values.
+
 
 
 

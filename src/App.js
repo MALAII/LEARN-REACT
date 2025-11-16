@@ -22,12 +22,13 @@ import './App.css';
 // import SelectStudent from './components/SelectStudent';
 // import SideEffect from './components/SideEffect';
 // import LoginEffect from './components/LoginEffect';
-import FeedbackForm from './components/FeedbackForm';
-import {BrowserRouter, Routes,Route} from 'react-router-dom';
+// import FeedbackForm from './components/FeedbackForm';
+import {BrowserRouter, Routes,Route ,Link} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import { Link } from 'react-router-dom';
-import FullNameExample from './components/FullNameExample';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
+// import FullNameExample from './components/FullNameExample';
 
 
 
@@ -65,21 +66,29 @@ function App() {
      {/* <SelectStudent/>
      <SideEffect userName="malai"/>
      <LoginEffect/> */}
-     <FeedbackForm/>
+     {/* <FeedbackForm/> */}
 
      <BrowserRouter>
 
      <nav>
-      <Link to={'/home'}>Home</Link>
-      <Link to={'/about'}>About</Link>
+       <Link to={'/login'}>Login</Link>|
+      <Link to={'/home'}>Home</Link>|
+      <Link to={'/profile'}>Profile</Link>|
+      <Link to={'/about'}>About</Link>|
+    
+     
+
       </nav>
 
      <Routes>
      <Route path='/home' element ={<Home/>} />
-     <Route path='/About' element ={<About/>}/>
+     <Route path='/about' element ={<About/>}/>
+    <Route path='/profile' element ={<Profile/>}/>
+     <Route path='/login' element ={<Login/>}/>
+
      </Routes>
      </BrowserRouter>
-     <FullNameExample/>
+     {/* <FullNameExample/> */}
 
     </div>
 

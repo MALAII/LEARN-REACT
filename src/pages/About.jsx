@@ -1,7 +1,8 @@
 function About(){
     return(
         <>
-        <h3>this is the about page</h3>
+        <h1>About Page</h1>
+        <p>This is the about page</p>
         
         </>
     );
