@@ -11,11 +11,15 @@ create react app
 babel - compiler/ transpilar  converts jsx to pure js
 package.json - blueprint or metadata of a particular project
 src- source file that contains all the code files of your  particular project
+node.js - runtime environment for js
 
 Day 2: 28/10/2025:
-file structure
-component- is a building block of react project it is a resuable piece of code
+file structure 
+component- is a building block of react project it is a resuable piece of code.
+types : 1. functional component 
+        2. Class components
 function components - functional component is a js function which returns the jsx element.
+Key - key should be unique and stable across render.
 jsx: javascript xml (not html it is html like syntax)
 rules for jsx:
            1.returns only one parent element
@@ -26,11 +30,12 @@ rules for jsx:
            5.create a folder inside src as components (parsel casing )
 inside that file - Greetings. import it in app
            6. props - it is a property used to pass data from parent component to the child component
+           prop drilling- props passing deeping through many components
 
 Day 3:29/10/2025:
         state: state is special memory inside a component that can holds data which can change over time
         Hooks: hook is a special function used to  state management, lifecycle methods , side effects 
-        usestate: usestate is a hook used to manage state in the component 
+        usestate:   usestate is a hook used to manage state in the component 
         use state is assigned to a array of values one is state variable and state function 
         const [state, setState]=usestate(initial value)
         events:action performed by user
@@ -202,9 +207,82 @@ useEffect(()={
 
 Day 15 : 14/11/2025
 
-useNavigate() -->  navigate to next page
+useNavigate() -->  navigate to next page without reloading the page
 useParams() -->useParams() is a React Router hook that helps you read the values from the URL.
 We need useParams() to read these values.
+
+Day 16: 17/11/2025
+group task given:
+todo list
+1. todo input field + button 
+2. show list
+3. update
+4. delete
+5. date add 
+6. routing
+
+Day 17 : 18/11/2025
+same todo list group task done
+
+Day 18 : 19/11/2025
+Task given in cls :
+1. hospital counter
+2. Temperature checker
+3. Age checker
+4. speed checker
+task given to complete : Create a simple product list with at least three items, each having a name and price. Display all the products on the screen with an “Add to Cart” button next to each. When a user clicks the button, add that product to a cart array and show all the selected items below. Allow the user to remove any item from the cart. Finally, display the total number of items in the cart at the top
+
+Day 19 : 20/11/2025 
+question asked 
+SPA - A Single Page Application is a type of web application that loads only 
+one HTML page, and updates the content dynamically using JavaScript 
+without refreshing the whole page .
+fragments - 1. Fragments groups the jsx elements
+            2. Wrapper that doesn't add any new nodes in DOM 
+            3. which won't affect the styling of the particular project so using instead of <div>.
+            <div> will take the default margin and padding that may affect the styling of the project so 
+            using Fragments<></> instead of <div></div>
+            cannot add stylename in fragments <></>
+            class task : select dropdown 
+task : lifting state up
+lifecyclye methods
+default props
+mounting unmounting
+
+Day 20 : 21/11/2025:
+vite installed 
+react revision done
+
+Day 21 : 22/11/2025:
+revision done (absent)
+ 
+Day 22: 24/11/2025:
+Redux installation 
+npm install @reduxjs/toolkit react-redux
+https://redux.js.org/tutorials/quick-start
+
+Day 23: 25/11/2025:
+class task given in vite - routing - login page, home , profile, about
+
+Day 24: 26/11/2025:
+task - simple calculator (group task)
+
+Day 25 : 27/11/2025:
+API INTEGRATION
+ 
+Day 26 : 28/11/2025:
+reducerhook taken
+task given :
+usecallback
+react memo
+
+
+
+
+
+
+
+
 
 
 

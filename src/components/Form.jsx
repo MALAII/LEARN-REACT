@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 function Form() {
     const [name, setName] = useState('')
@@ -7,7 +8,16 @@ function Form() {
     const handlesubmit = (e) => {
         e.preventDefault() // prevents reloading the page 
         alert(`Name: ${name}   Email: ${email}`)
+        let userData={
+    email: email
+        }
+        
+        axios.post('https://jsonplaceholder.typicode.com/posts', userData)
+        .then((response)=>{
+            console.log(response)
+        })
     }
+
 
     return (
         <>
